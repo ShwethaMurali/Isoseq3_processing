@@ -1,0 +1,14 @@
+{
+	"group" : "rhesus",
+        "rhesus": {
+                "rhesus0": "data/rhesus0.subreads.bam",
+                "rhesus1": "data/rhesus1.subreads.bam"
+                  },
+	"primers_fasta" : "data/jason_primers.fasta",
+	"cluster_settings" : {
+		"heaviest" : "-l h_rt=12:00:00 -q eichler-short.q  -l mfree=4g -pe serial 16 ",
+		"heavy"    : " -l mfree=20G -l h_rt=24:00:00 -q eichler-short.q  -l disk_free=10G ",
+		"lite"    : " -l mfree=2G -l h_rt=00:10:00 -q eichler-short.q  "
+        }
+
+}
